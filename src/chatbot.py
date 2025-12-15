@@ -12,6 +12,8 @@ data = {
 print("Chatbot Layanan Informasi Mahasiswa")
 print("Ketik 'exit' untuk keluar")
 
+data = {k.lower(): v for k, v in data.items()}
+
 while True:
     user = input("Anda: ").lower()
 
